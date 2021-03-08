@@ -76,7 +76,23 @@ function Body() {
               Este comando solo se realiza una sola vez por repositorio ya que solo puedes estar conectado a un solo repositorio.
             </li>
             <li>
-              <code>git push -u origin master</code> Este comando sirve para sincronizar el repositorio local con el remoto.
+              <code>git push <code className="text-white">-u origin master</code></code> Este comando sirve para sincronizar el repositorio local con el remoto. <br/>
+              Los comandos <code className="text-white">-u origin master</code> solo se realizan la primera vez. El resto de veces para enviar el repositorio local al remoto solo hay que usar <code>git push</code>.
+            </li>
+            <li>
+              <code>git pull</code>
+              <p>
+                Este sería lo contrario a push. En vez de actualizar el repositorio remoto desde el local. Este Actualiza el repositorio local desde el remoto.
+              </p>
+            </li>
+            <li>
+              <code>git tag version1.0 -m <code className="text-white">"version 1.0"</code></code>
+              <p>
+                Con este comando indicas a git que cree las famosas "versiones" del código.
+              </p>
+              <p>
+                Cuando usas el comando <code>git log --oneline</code> podrás ver que aparece en el repositorio actual un tag: [nombre tag].
+              </p>
             </li>
           </ul>
         </div>
