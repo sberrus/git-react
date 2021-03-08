@@ -14,7 +14,58 @@ function Body() {
           </a>
         </div>
         <div className="container-fluid">
-            <h2>Snippets y definiciones que tengo que reforzar</h2>
+          <h4 className="text-info">Inicio</h4>
+          <p>
+            Esto es un repaso de las cosas básicas y conseguir nuevos
+            conocimientos para el repositorio.
+          </p>
+          <h2>Lista de comandos para la CLI</h2>
+          <ul>
+            <li>
+              <code>git status -s</code>
+              <p className="mt-2">
+                Con el <code>-s</code> Muestra iconos para obtener información
+                más comodamente. Además de su función habitual de obtener si se
+                ha agregado los archivos a la area temporal.
+              </p>
+            </li>
+            <li>
+              <code>git add . | nombre_archivo.extension</code>
+              <p>
+                add sirve para pasar las archivos a la area virtual previa al
+                commit. Puedes elegir los archivos que quieres agregar
+                individualmente.
+              </p>
+            </li>
+            <li>
+              <code>git commit -m "texto"</code>
+              <p>
+                Los commits son los que nos permiten recuperar versiones de los
+                códigos si deseamos volver para atras en el tiempo.
+              </p>
+            </li>
+            <li>
+              <code>
+                git log <code className="text-white">--oneline</code>
+              </code>
+              <p>
+                <code>git log</code> sirve para ver los commits que tiene ese
+                archivo. De manera que esta información nos permite acceder a
+                otras versiones de ese archivo que se hayan comitado.
+              </p>
+              <p>
+                <code className="text-white">--online</code> se le agrega esa
+                función para que no se active (Supongo que VIM) para poder
+                acceder a las versiones solo con el cli.
+              </p>
+            </li>
+            <li>
+              <code>
+                git reset <code className="text-white">--mixed || --hard</code>
+              </code>
+              <p>hola</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
