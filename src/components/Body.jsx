@@ -94,6 +94,9 @@ function Body() {
                 Cuando usas el comando <code>git log --oneline</code> podrás ver que aparece en el repositorio actual un tag: [nombre tag].
               </p>
             </li>
+            <li>
+              s
+            </li>
           </ul>
         </div>
       </div>
