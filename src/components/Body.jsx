@@ -63,7 +63,9 @@ function Body() {
               <code>
                 git reset <code className="text-white">--mixed || --hard</code>
               </code>
-              <p>hola</p>
+              <p>
+                <code>git reset --hard [número id]</code> Este comando sirve para poder viajar entre los commits, cada commit tiene un id y con el uso de este comando puedes viajar a esa versión del archivo.
+              </p>
             </li>
           </ul>
         </div>
