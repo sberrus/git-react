@@ -68,6 +68,17 @@ function Body() {
               </p>
             </li>
           </ul>
+          <h2>Respaldo en GitHub</h2>
+          
+          <ul>
+            <li>
+              <code>git remote add origin <code className="text-white">https://github.com/usuario/proyecto.git</code></code> Con este comando indicamos a github que estamos conectados a este. Este repositorio tendrá conexión directa con GitHub. <br/>
+              Este comando solo se realiza una sola vez por repositorio ya que solo puedes estar conectado a un solo repositorio.
+            </li>
+            <li>
+              <code>git push -u origin master</code> Este comando sirve para sincronizar el repositorio local con el remoto.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
