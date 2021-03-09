@@ -69,14 +69,14 @@ function Body() {
             </li>
           </ul>
           <h2>Respaldo en GitHub</h2>
-          
+
           <ul>
             <li>
-              <code>git remote add origin <code className="text-white">https://github.com/usuario/proyecto.git</code></code> Con este comando indicamos a github que estamos conectados a este. Este repositorio tendrá conexión directa con GitHub. <br/>
+              <code>git remote add origin <code className="text-white">https://github.com/usuario/proyecto.git</code></code> Con este comando indicamos a github que estamos conectados a este. Este repositorio tendrá conexión directa con GitHub. <br />
               Este comando solo se realiza una sola vez por repositorio ya que solo puedes estar conectado a un solo repositorio.
             </li>
             <li>
-              <code>git push <code className="text-white">-u origin master</code></code> Este comando sirve para sincronizar el repositorio local con el remoto. <br/>
+              <code>git push <code className="text-white">-u origin master</code></code> Este comando sirve para sincronizar el repositorio local con el remoto. <br />
               Los comandos <code className="text-white">-u origin master</code> solo se realizan la primera vez. El resto de veces para enviar el repositorio local al remoto solo hay que usar <code>git push</code>.
             </li>
             <li>
@@ -107,7 +107,7 @@ function Body() {
         </div>
         <div className="container-fluid p-0">
           <h2>Ramas y Merge</h2>
-         <h3>Ramas</h3>
+          <h3>Ramas</h3>
           <p>
             Las ramas son versiones de nuestro código que coexisten con la versión máster. Esto nos permite trabajar en un proyecto en base a nuestro software y modificarlo sin que la versión original haya sido alterada.
           </p>
@@ -129,6 +129,20 @@ function Body() {
               <code>git chekout <code className="text-white">nombre_rama</code></code>
               <p>
                 De esta forma indicamos a git que nos mueva de Rama.
+              </p>
+            </li>
+            <li className="bg-dark rounded text-white">
+              <code className="text-warning">git merge</code>
+              <p>
+                Merge sirve para unir dos ramas. Esto tiene una serie de requisitos:
+                <ul>
+                  <li>
+                    Antes que nada tenemos que volver a la rama master, o la rama que querramos unir la nueva rama con el comando <code>git checkout <code className="text-white">ramaPrincipaloPadre</code></code>.
+                  </li>
+                  <li>
+                    Ya estando en la rama principal/padre podemos hacer el merge 
+                  </li>
+                </ul>
               </p>
             </li>
           </ul>
