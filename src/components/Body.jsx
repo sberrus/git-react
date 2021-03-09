@@ -64,7 +64,10 @@ function Body() {
                 git reset <code className="text-white">--mixed || --hard</code>
               </code>
               <p>
-                <code>git reset --hard [número id]</code> Este comando sirve para poder viajar entre los commits, cada commit tiene un id y con el uso de este comando puedes viajar a esa versión del archivo.
+                <code>git reset --hard [número id]</code> Este comando sirve
+                para poder viajar entre los commits, cada commit tiene un id y
+                con el uso de este comando puedes viajar a esa versión del
+                archivo.
               </p>
             </li>
           </ul>
@@ -72,35 +75,63 @@ function Body() {
 
           <ul>
             <li>
-              <code>git remote add origin <code className="text-white">https://github.com/usuario/proyecto.git</code></code> Con este comando indicamos a github que estamos conectados a este. Este repositorio tendrá conexión directa con GitHub. <br />
-              Este comando solo se realiza una sola vez por repositorio ya que solo puedes estar conectado a un solo repositorio.
+              <code>
+                git remote add origin{" "}
+                <code className="text-white">
+                  https://github.com/usuario/proyecto.git
+                </code>
+              </code>{" "}
+              Con este comando indicamos a github que estamos conectados a este.
+              Este repositorio tendrá conexión directa con GitHub. <br />
+              Este comando solo se realiza una sola vez por repositorio ya que
+              solo puedes estar conectado a un solo repositorio.
             </li>
             <li>
-              <code>git push <code className="text-white">-u origin master</code></code> Este comando sirve para sincronizar el repositorio local con el remoto. <br />
-              Los comandos <code className="text-white">-u origin master</code> solo se realizan la primera vez. El resto de veces para enviar el repositorio local al remoto solo hay que usar <code>git push</code>.
+              <code>
+                git push <code className="text-white">-u origin master</code>
+              </code>{" "}
+              Este comando sirve para sincronizar el repositorio local con el
+              remoto. <br />
+              Los comandos <code className="text-white">
+                -u origin master
+              </code>{" "}
+              solo se realizan la primera vez. El resto de veces para enviar el
+              repositorio local al remoto solo hay que usar{" "}
+              <code>git push</code>.
             </li>
             <li>
               <code>git pull</code>
               <p>
-                Este sería lo contrario a push. En vez de actualizar el repositorio remoto desde el local. Este Actualiza el repositorio local desde el remoto.
+                Este sería lo contrario a push. En vez de actualizar el
+                repositorio remoto desde el local. Este Actualiza el repositorio
+                local desde el remoto.
               </p>
             </li>
             <li>
-              <code>git tag version1.0 -m <code className="text-white">"version 1.0"</code></code>
+              <code>
+                git tag version1.0 -m{" "}
+                <code className="text-white">"version 1.0"</code>
+              </code>
               <p>
-                Con este comando indicas a git que cree las famosas "versiones" del código.
+                Con este comando indicas a git que cree las famosas "versiones"
+                del código.
               </p>
               <p>
-                Cuando usas el comando <code>git log --oneline</code> podrás ver que aparece en el repositorio actual un tag: [nombre tag].
+                Cuando usas el comando <code>git log --oneline</code> podrás ver
+                que aparece en el repositorio actual un tag: [nombre tag].
               </p>
             </li>
             <li>
               <code>git push --tag</code>
               <p>
-                Con este comando enviamos al repositorio los tags. Hay que destacar que los tags se almacenan externamente que los branch. Estos no se actualizan con el push, solo cuando se le añade el <code className="text-white">--tag</code>
+                Con este comando enviamos al repositorio los tags. Hay que
+                destacar que los tags se almacenan externamente que los branch.
+                Estos no se actualizan con el push, solo cuando se le añade el{" "}
+                <code className="text-white">--tag</code>
               </p>
               <p>
-                Principalmente sirve para tener un checkpoint donde poder tener más ordenadas las diferentes versiones de tu software.
+                Principalmente sirve para tener un checkpoint donde poder tener
+                más ordenadas las diferentes versiones de tu software.
               </p>
             </li>
           </ul>
@@ -109,7 +140,10 @@ function Body() {
           <h2>Ramas y Merge</h2>
           <h3>Ramas</h3>
           <p>
-            Las ramas son versiones de nuestro código que coexisten con la versión máster. Esto nos permite trabajar en un proyecto en base a nuestro software y modificarlo sin que la versión original haya sido alterada.
+            Las ramas son versiones de nuestro código que coexisten con la
+            versión máster. Esto nos permite trabajar en un proyecto en base a
+            nuestro software y modificarlo sin que la versión original haya sido
+            alterada.
           </p>
           <h4>Comandos para git</h4>
           <ul>
@@ -120,32 +154,61 @@ function Body() {
               </p>
             </li>
             <li>
-              <code>git branch <code className="text-white">nombre_rama</code></code>
+              <code>
+                git branch <code className="text-white">nombre_rama</code>
+              </code>
               <p>
-                Con el uso de este comando creamos una nueva rama. Hay que tomar en cuenta que la crea pero seguimos trabajando en la rama principal, por lo que se debe proceder a cambiar de Rama.
+                Con el uso de este comando creamos una nueva rama. Hay que tomar
+                en cuenta que la crea pero seguimos trabajando en la rama
+                principal, por lo que se debe proceder a cambiar de Rama.
               </p>
             </li>
             <li>
-              <code>git chekout <code className="text-white">nombre_rama</code></code>
-              <p>
-                De esta forma indicamos a git que nos mueva de Rama.
-              </p>
+              <code>
+                git chekout <code className="text-white">nombre_rama</code>
+              </code>
+              <p>De esta forma indicamos a git que nos mueva de Rama.</p>
             </li>
-            <li className="bg-dark rounded text-white">
+            <li className="bg-dark rounded">
               <code className="text-warning">git merge</code>
-              <p>
-                Merge sirve para unir dos ramas. Esto tiene una serie de requisitos:
+              <p className="pb-1 text-white">
+                Merge sirve para unir dos ramas. Esto tiene una serie de
+                requisitos:
                 <ul>
                   <li>
-                    Antes que nada tenemos que volver a la rama master, o la rama que querramos unir la nueva rama con el comando <code>git checkout <code className="text-white">ramaPrincipaloPadre</code></code>.
+                    Antes que nada tenemos que volver a la rama master, o la
+                    rama que querramos unir la nueva rama con el comando{" "}
+                    <code>
+                      git checkout{" "}
+                      <code className="text-white">ramaPrincipaloPadre</code>
+                    </code>
+                    .
                   </li>
                   <li>
-                    Ya estando en la rama principal/padre podemos hacer el merge 
+                    <p>
+                      Ya estando en la rama principal/padre podemos hacer el
+                      merge con el comando{" "}
+                      <code>
+                        git merge{" "}
+                        <code className="text-white">nombreRamaHija</code>
+                      </code>
+                    </p>
+                  <p>
+                    Con esto ya tenemos las dos ramas unidas en una nueva rama.
+                  </p>
                   </li>
                 </ul>
               </p>
             </li>
+            <li>
+              <code>git branch <code className="text-info">-d</code> <code className="text-white">nombre_rama</code></code>
+              <p>
+                Con este fragmento de código podemos eliminar la rama que no vamos a utilizar. Si ya hemos introducido los cambios necesarios en la página solo hay que hacer merge y eliminar la versión anterior si lo deseas. Ya el control que tengas con las ramas depende de uno.
+              </p>
+            </li>
           </ul>
+
+          <h1>Prueba Primer Commit</h1>
         </div>
       </div>
     </div>
