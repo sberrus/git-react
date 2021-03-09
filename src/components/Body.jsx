@@ -207,10 +207,7 @@ function Body() {
               </p>
             </li>
           </ul>
-
-          <h1>Prueba Primer Commit</h1>
-          <h1>Prueba segundo Commit</h1>
-          <h1>Prueba tercer Commit</h1>
+          
         </div>
       </div>
     </div>
