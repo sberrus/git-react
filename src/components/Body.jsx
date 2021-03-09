@@ -13,7 +13,7 @@ function Body() {
             <h6>Bluuweb - YouTube</h6>
           </a>
         </div>
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
           <h4 className="text-info">Inicio</h4>
           <p>
             Esto es un repaso de las cosas básicas y conseguir nuevos
@@ -95,7 +95,41 @@ function Body() {
               </p>
             </li>
             <li>
-              s
+              <code>git push --tag</code>
+              <p>
+                Con este comando enviamos al repositorio los tags. Hay que destacar que los tags se almacenan externamente que los branch. Estos no se actualizan con el push, solo cuando se le añade el <code className="text-white">--tag</code>
+              </p>
+              <p>
+                Principalmente sirve para tener un checkpoint donde poder tener más ordenadas las diferentes versiones de tu software.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div className="container-fluid p-0">
+          <h2>Ramas y Merge</h2>
+         <h3>Ramas</h3>
+          <p>
+            Las ramas son versiones de nuestro código que coexisten con la versión máster. Esto nos permite trabajar en un proyecto en base a nuestro software y modificarlo sin que la versión original haya sido alterada.
+          </p>
+          <h4>Comandos para git</h4>
+          <ul>
+            <li>
+              <code>git branch</code>
+              <p>
+                Con este comando obtenemos todas las ramas de este repositorio.
+              </p>
+            </li>
+            <li>
+              <code>git branch <code className="text-white">nombre_rama</code></code>
+              <p>
+                Con el uso de este comando creamos una nueva rama. Hay que tomar en cuenta que la crea pero seguimos trabajando en la rama principal, por lo que se debe proceder a cambiar de Rama.
+              </p>
+            </li>
+            <li>
+              <code>git chekout <code className="text-white">nombre_rama</code></code>
+              <p>
+                De esta forma indicamos a git que nos mueva de Rama.
+              </p>
             </li>
           </ul>
         </div>
